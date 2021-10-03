@@ -4,11 +4,11 @@ domain = input("Enter domain: ")
 file = open('dic.txt','r')
 content = file.read()
 
-subdomains = content.splitlines()
+dicts = content.splitlines()
 
-for subdomain in subdomains:
-	url1 = f"http://{domain}/{subdomain}"
-	url2 = f"https://{domain}/{subdomain}"
+for dict in dicts:
+	url1 = f"http://{domain}/{dict}"
+	url2 = f"https://{domain}/{dict}"
 	try:
 		requests.get(url1)
 		print(f"Discovered URL: {url1}")
