@@ -1,7 +1,8 @@
 import requests
 #import threading
 domain = input("Enter domain: ")
-file = open('dic.txt','r')
+a = input("Enter you paylaod list: ")
+file = open(a,'r')
 content = file.read()
 
 dicts = content.splitlines()
